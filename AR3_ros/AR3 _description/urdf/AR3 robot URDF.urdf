@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="AR3 robot URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.1217E-05 0.040225 0.091723"
+        rpy="0 0 0" />
+      <mass
+        value="0.95803" />
+      <inertia
+        ixx="0.0021884"
+        ixy="-3.8621E-07"
+        ixz="-9.0018E-07"
+        iyy="0.0035398"
+        iyz="-5.63E-05"
+        izz="0.0017221" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-0.18637 0.087903 0.034666"
+        rpy="0 0 0" />
+      <mass
+        value="0.93653" />
+      <inertia
+        ixx="0.0006149"
+        ixy="-3.5712E-05"
+        ixz="2.2503E-06"
+        iyy="0.00061688"
+        iyz="4.2768E-06"
+        izz="0.00082168" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.66667 0.69804 0.76863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0.05115 -0.046305 0.31137"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.00177299698041906 -0.129945945611691 0.00570035374423986"
+        rpy="0 0 0" />
+      <mass
+        value="0.637803299824227" />
+      <inertia
+        ixx="0.00266740425939751"
+        ixy="5.87124646320831E-06"
+        ixz="9.8351235270744E-08"
+        iyy="0.000265543881550195"
+        iyz="-1.62637507136454E-07"
+        izz="0.00283295724929194" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="-0.14159 0.11045 0.10286"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-0.0180324427735189 -0.014051268471184 0.0265572844874025"
+        rpy="0 0 0" />
+      <mass
+        value="0.299250313903521" />
+      <inertia
+        ixx="8.10130319878466E-05"
+        ixy="-2.02311253343883E-08"
+        ixz="-3.57470805813255E-07"
+        iyy="0.000237917881085187"
+        iyz="-1.99497014543737E-08"
+        izz="0.000248001671701565" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 -0.305 0.015"
+      rpy="0 0 3.1416" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="-0.00098547 0.0012508 0.087852"
+        rpy="0 0 0" />
+      <mass
+        value="0.3131" />
+      <inertia
+        ixx="0.00060112"
+        ixy="-1.9175E-06"
+        ixz="4.7472E-06"
+        iyy="0.00054111"
+        iyz="1.484E-05"
+        izz="0.00010306" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.66667 0.69804 0.76863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="continuous">
+    <origin
+      xyz="0.035639 0 0.0367"
+      rpy="0 1.5708 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="0.0204923475102851 0.029076045748002 0.025508821339453"
+        rpy="0 0 0" />
+      <mass
+        value="0.110223683345124" />
+      <inertia
+        ixx="2.06412375881851E-05"
+        ixy="-7.74767121989349E-09"
+        ixz="-3.68458609238178E-08"
+        iyy="1.78830745854807E-05"
+        iyz="-6.13372046050288E-09"
+        izz="2.07561493534032E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="-0.0188 -0.027618 0.14959"
+      rpy="0 0 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="0.000113184158456061 0.00048340110390005 0.0178526795143014"
+        rpy="0 0 0" />
+      <mass
+        value="0.0354906853667053" />
+      <inertia
+        ixx="3.22959526772625E-06"
+        ixy="-1.76379819794478E-08"
+        ixz="-1.30397340878784E-09"
+        iyy="5.39011153689331E-06"
+        iyz="1.2059112569367E-08"
+        izz="7.36241184720763E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0.0178 0.027618 0.057613"
+      rpy="0 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link7">
+    <inertial>
+      <origin
+        xyz="0.02469 -0.0085598 -0.0027659"
+        rpy="0 0 0" />
+      <mass
+        value="0.0066772" />
+      <inertia
+        ixx="4.5765E-07"
+        ixy="1.445E-11"
+        ixz="1.6544E-22"
+        iyy="4.5865E-07"
+        iyz="4.632E-23"
+        izz="3.4768E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://AR3 robot URDF/meshes/link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gripper"
+    type="prismatic">
+    <origin
+      xyz="0.02469 0.0085908 0.04008"
+      rpy="3.1416 0 -3.1416" />
+    <parent
+      link="link6" />
+    <child
+      link="link7" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
